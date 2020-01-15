@@ -12,4 +12,4 @@ I separate the project into 2 xcodeproj:
 The Implementation of CRDT LWW ELement Set complete with Unit Testing.
 
 **2. CRDT-LWW-UI**
-The UI with simple MVC just to present the code visually. I made it as fast as possible so, please ignore the code quality :D
+The UI with simple MVC just to present the code visually. I made it as fast as possible so, please ignore the design pattern :D
