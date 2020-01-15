@@ -10,8 +10,8 @@ import Foundation
 
 public struct CRDTNode<T : Hashable> : Comparable {
     
-    let value: T
-    let timestampDate: Date
+    public let value: T
+    public let timestampDate: Date
     
     public init(value: T, timeStampDate: Date = Date()) {
         self.value = value
@@ -33,6 +33,8 @@ public enum CRDTOpration {
 }
 
 public class CRDTLWWSet<T : Hashable> : Equatable {
+    
+    public init() { }
 
     public struct Node<T: Hashable>: Equatable {
         public var node: CRDTNode<T>
@@ -43,7 +45,7 @@ public class CRDTLWWSet<T : Hashable> : Equatable {
         return _sortedExistingData
     }
     
-    public var completeData: [T: Node<T>] {
+    public var completedSet: [T: Node<T>] {
         return _data
     }
     

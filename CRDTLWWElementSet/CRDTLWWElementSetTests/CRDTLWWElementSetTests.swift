@@ -16,7 +16,7 @@ class CRDTLWWElementSetTests: XCTestCase {
         setA.add(CRDTNode(value: "A"))
         setA.add(CRDTNode(value: "B"))
         XCTAssertEqual(setA.sortedExistingData.count, 2)
-        XCTAssertEqual(setA.completeData.count, 2)
+        XCTAssertEqual(setA.completedSet.count, 2)
         
         let resultA = setA.query(element: "A")
         let resultB = setA.query(element: "B")
@@ -32,7 +32,7 @@ class CRDTLWWElementSetTests: XCTestCase {
         setA.add(CRDTNode(value: "A", timeStampDate: Date(timeIntervalSinceReferenceDate: 1)))
         setA.add(CRDTNode(value: "A", timeStampDate: Date(timeIntervalSinceReferenceDate: 2)))
         XCTAssertEqual(setA.sortedExistingData.count, 1)
-        XCTAssertEqual(setA.completeData.count, 1)
+        XCTAssertEqual(setA.completedSet.count, 1)
         XCTAssertEqual(setA.query(element: "A")!.timestampDate,
                        Date(timeIntervalSinceReferenceDate: 2))
     }
@@ -43,7 +43,7 @@ class CRDTLWWElementSetTests: XCTestCase {
         setA.remove(CRDTNode(value: "A"))
         
         XCTAssertEqual(setA.sortedExistingData.count, 0)
-        XCTAssertEqual(setA.completeData.count, 1)
+        XCTAssertEqual(setA.completedSet.count, 1)
     }
     
     func testMustNotRemoveNode() {
@@ -52,7 +52,7 @@ class CRDTLWWElementSetTests: XCTestCase {
         setA.remove(CRDTNode(value: "A", timeStampDate: Date(timeIntervalSinceReferenceDate: 1)))
 
         XCTAssertEqual(setA.sortedExistingData.count, 1)
-        XCTAssertEqual(setA.completeData.count, 1)
+        XCTAssertEqual(setA.completedSet.count, 1)
     }
     
     func testRemoveNothingNode() {
@@ -61,7 +61,7 @@ class CRDTLWWElementSetTests: XCTestCase {
         setA.remove(CRDTNode(value: "B"))
         
         XCTAssertEqual(setA.sortedExistingData.count, 1)
-        XCTAssertEqual(setA.completeData.count, 2)
+        XCTAssertEqual(setA.completedSet.count, 2)
 
     }
     

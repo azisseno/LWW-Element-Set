@@ -59,15 +59,15 @@ class CRDTLWWElementSetOperationTests: XCTestCase {
         setB.remove(CRDTNode(value: "D", timeStampDate: Date(timeIntervalSinceReferenceDate: 3)))
 
         let merged = setA + setB + setC
-        print(merged.completeData)
+        print(merged.completedSet)
         print(merged.sortedExistingData)
 
         XCTAssertEqual(merged.sortedExistingData.count, 2)
-        XCTAssertEqual(merged.completeData.count, 4)
-        XCTAssertNotNil(merged.query(element: "A")) // cat 1 never been removed
-        XCTAssertNotNil(merged.query(element: "C")) // parrot 2 can't be removed before it exists
-        XCTAssertNil(merged.query(element: "B")) // dog removed
-        XCTAssertNil(merged.query(element: "D")) // rubbish never exists
+        XCTAssertEqual(merged.completedSet.count, 4)
+        XCTAssertNotNil(merged.query(element: "A")) // A on 1 never been removed
+        XCTAssertNotNil(merged.query(element: "C")) // C on 2 can't be removed on 1
+        XCTAssertNil(merged.query(element: "B")) // B removed on 3
+        XCTAssertNil(merged.query(element: "D")) // D never exist
 
     }
     
