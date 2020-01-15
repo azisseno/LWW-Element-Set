@@ -5,3 +5,10 @@ Here is my CRDT LWW Element Set implementation.
 
 ---
 *Please ignore the UI Code Stuff. I write them in simple MVC just to provide a user interface so we can try it on simulator or devices*
+
+I separate the project into 2 xcodeproj.
+**1. CRDTLWWElementSet**
+The Implementation of CRDTLWWE ELement Set complete with Unit Testing.
+
+**1. CRDT-LWW-UI**
+The UI with simple MVC just to present the code visually.
