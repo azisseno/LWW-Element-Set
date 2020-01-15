@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:CRDT-LWW-UI/../LLWElementSet/LLWElementSet.xcodeproj">
+      location = "group:CRDT-LWW-UI/CRDT-LWW-UI.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:CRDT-LWW-UI/CRDT-LWW-UI.xcodeproj">
+      location = "group:CRDTLWWElementSet/CRDTLWWElementSet.xcodeproj">
    </FileRef>
 </Workspace>

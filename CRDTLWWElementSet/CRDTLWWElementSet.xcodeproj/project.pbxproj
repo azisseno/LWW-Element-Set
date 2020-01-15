@@ -7,154 +7,161 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		840227A823CF62AC0038789A /* LLWElementSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8402279E23CF62AC0038789A /* LLWElementSet.framework */; };
-		840227AD23CF62AC0038789A /* LLWElementSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840227AC23CF62AC0038789A /* LLWElementSetTests.swift */; };
-		840227AF23CF62AC0038789A /* LLWElementSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 840227A123CF62AC0038789A /* LLWElementSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8402283C23CF6F420038789A /* CRDTLWWElementSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8402283223CF6F410038789A /* CRDTLWWElementSet.framework */; };
+		8402284123CF6F420038789A /* CRDTLWWElementSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8402284023CF6F420038789A /* CRDTLWWElementSetTests.swift */; };
+		8402284323CF6F420038789A /* CRDTLWWElementSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8402283523CF6F410038789A /* CRDTLWWElementSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8402284D23CF6F5C0038789A /* CRDTLWWElementSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8402284C23CF6F5C0038789A /* CRDTLWWElementSet.swift */; };
+		8402284F23CF6FBD0038789A /* CRDTLWWElementSetOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8402284E23CF6FBD0038789A /* CRDTLWWElementSetOperationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		840227A923CF62AC0038789A /* PBXContainerItemProxy */ = {
+		8402283D23CF6F420038789A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8402279523CF62AC0038789A /* Project object */;
+			containerPortal = 8402282923CF6F410038789A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8402279D23CF62AC0038789A;
-			remoteInfo = LLWElementSet;
+			remoteGlobalIDString = 8402283123CF6F410038789A;
+			remoteInfo = CRDTLWWElementSet;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8402279E23CF62AC0038789A /* LLWElementSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LLWElementSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		840227A123CF62AC0038789A /* LLWElementSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLWElementSet.h; sourceTree = "<group>"; };
-		840227A223CF62AC0038789A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		840227A723CF62AC0038789A /* LLWElementSetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLWElementSetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		840227AC23CF62AC0038789A /* LLWElementSetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLWElementSetTests.swift; sourceTree = "<group>"; };
-		840227AE23CF62AC0038789A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8402283223CF6F410038789A /* CRDTLWWElementSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CRDTLWWElementSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8402283523CF6F410038789A /* CRDTLWWElementSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRDTLWWElementSet.h; sourceTree = "<group>"; };
+		8402283623CF6F410038789A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8402283B23CF6F420038789A /* CRDTLWWElementSetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CRDTLWWElementSetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8402284023CF6F420038789A /* CRDTLWWElementSetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRDTLWWElementSetTests.swift; sourceTree = "<group>"; };
+		8402284223CF6F420038789A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8402284C23CF6F5C0038789A /* CRDTLWWElementSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRDTLWWElementSet.swift; sourceTree = "<group>"; };
+		8402284E23CF6FBD0038789A /* CRDTLWWElementSetOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRDTLWWElementSetOperationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8402279B23CF62AC0038789A /* Frameworks */ = {
+		8402282F23CF6F410038789A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		840227A423CF62AC0038789A /* Frameworks */ = {
+		8402283823CF6F420038789A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				840227A823CF62AC0038789A /* LLWElementSet.framework in Frameworks */,
+				8402283C23CF6F420038789A /* CRDTLWWElementSet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8402279423CF62AC0038789A = {
+		8402282823CF6F410038789A = {
 			isa = PBXGroup;
 			children = (
-				840227A023CF62AC0038789A /* LLWElementSet */,
-				840227AB23CF62AC0038789A /* LLWElementSetTests */,
-				8402279F23CF62AC0038789A /* Products */,
+				8402283423CF6F410038789A /* CRDTLWWElementSet */,
+				8402283F23CF6F420038789A /* CRDTLWWElementSetTests */,
+				8402283323CF6F410038789A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8402279F23CF62AC0038789A /* Products */ = {
+		8402283323CF6F410038789A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8402279E23CF62AC0038789A /* LLWElementSet.framework */,
-				840227A723CF62AC0038789A /* LLWElementSetTests.xctest */,
+				8402283223CF6F410038789A /* CRDTLWWElementSet.framework */,
+				8402283B23CF6F420038789A /* CRDTLWWElementSetTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		840227A023CF62AC0038789A /* LLWElementSet */ = {
+		8402283423CF6F410038789A /* CRDTLWWElementSet */ = {
 			isa = PBXGroup;
 			children = (
-				840227A123CF62AC0038789A /* LLWElementSet.h */,
-				840227A223CF62AC0038789A /* Info.plist */,
+				8402283523CF6F410038789A /* CRDTLWWElementSet.h */,
+				8402284C23CF6F5C0038789A /* CRDTLWWElementSet.swift */,
+				8402283623CF6F410038789A /* Info.plist */,
 			);
-			path = LLWElementSet;
+			path = CRDTLWWElementSet;
 			sourceTree = "<group>";
 		};
-		840227AB23CF62AC0038789A /* LLWElementSetTests */ = {
+		8402283F23CF6F420038789A /* CRDTLWWElementSetTests */ = {
 			isa = PBXGroup;
 			children = (
-				840227AC23CF62AC0038789A /* LLWElementSetTests.swift */,
-				840227AE23CF62AC0038789A /* Info.plist */,
+				8402284023CF6F420038789A /* CRDTLWWElementSetTests.swift */,
+				8402284E23CF6FBD0038789A /* CRDTLWWElementSetOperationTests.swift */,
+				8402284223CF6F420038789A /* Info.plist */,
 			);
-			path = LLWElementSetTests;
+			path = CRDTLWWElementSetTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		8402279923CF62AC0038789A /* Headers */ = {
+		8402282D23CF6F410038789A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				840227AF23CF62AC0038789A /* LLWElementSet.h in Headers */,
+				8402284323CF6F420038789A /* CRDTLWWElementSet.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8402279D23CF62AC0038789A /* LLWElementSet */ = {
+		8402283123CF6F410038789A /* CRDTLWWElementSet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 840227B223CF62AC0038789A /* Build configuration list for PBXNativeTarget "LLWElementSet" */;
+			buildConfigurationList = 8402284623CF6F420038789A /* Build configuration list for PBXNativeTarget "CRDTLWWElementSet" */;
 			buildPhases = (
-				8402279923CF62AC0038789A /* Headers */,
-				8402279A23CF62AC0038789A /* Sources */,
-				8402279B23CF62AC0038789A /* Frameworks */,
-				8402279C23CF62AC0038789A /* Resources */,
+				8402282D23CF6F410038789A /* Headers */,
+				8402282E23CF6F410038789A /* Sources */,
+				8402282F23CF6F410038789A /* Frameworks */,
+				8402283023CF6F410038789A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = LLWElementSet;
-			productName = LLWElementSet;
-			productReference = 8402279E23CF62AC0038789A /* LLWElementSet.framework */;
+			name = CRDTLWWElementSet;
+			productName = CRDTLWWElementSet;
+			productReference = 8402283223CF6F410038789A /* CRDTLWWElementSet.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		840227A623CF62AC0038789A /* LLWElementSetTests */ = {
+		8402283A23CF6F420038789A /* CRDTLWWElementSetTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 840227B523CF62AC0038789A /* Build configuration list for PBXNativeTarget "LLWElementSetTests" */;
+			buildConfigurationList = 8402284923CF6F420038789A /* Build configuration list for PBXNativeTarget "CRDTLWWElementSetTests" */;
 			buildPhases = (
-				840227A323CF62AC0038789A /* Sources */,
-				840227A423CF62AC0038789A /* Frameworks */,
-				840227A523CF62AC0038789A /* Resources */,
+				8402283723CF6F420038789A /* Sources */,
+				8402283823CF6F420038789A /* Frameworks */,
+				8402283923CF6F420038789A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				840227AA23CF62AC0038789A /* PBXTargetDependency */,
+				8402283E23CF6F420038789A /* PBXTargetDependency */,
 			);
-			name = LLWElementSetTests;
-			productName = LLWElementSetTests;
-			productReference = 840227A723CF62AC0038789A /* LLWElementSetTests.xctest */;
+			name = CRDTLWWElementSetTests;
+			productName = CRDTLWWElementSetTests;
+			productReference = 8402283B23CF6F420038789A /* CRDTLWWElementSetTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8402279523CF62AC0038789A /* Project object */ = {
+		8402282923CF6F410038789A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = siza;
 				TargetAttributes = {
-					8402279D23CF62AC0038789A = {
+					8402283123CF6F410038789A = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
-					840227A623CF62AC0038789A = {
+					8402283A23CF6F420038789A = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 8402279823CF62AC0038789A /* Build configuration list for PBXProject "LLWElementSet" */;
+			buildConfigurationList = 8402282C23CF6F410038789A /* Build configuration list for PBXProject "CRDTLWWElementSet" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -162,26 +169,26 @@
 				en,
 				Base,
 			);
-			mainGroup = 8402279423CF62AC0038789A;
-			productRefGroup = 8402279F23CF62AC0038789A /* Products */;
+			mainGroup = 8402282823CF6F410038789A;
+			productRefGroup = 8402283323CF6F410038789A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8402279D23CF62AC0038789A /* LLWElementSet */,
-				840227A623CF62AC0038789A /* LLWElementSetTests */,
+				8402283123CF6F410038789A /* CRDTLWWElementSet */,
+				8402283A23CF6F420038789A /* CRDTLWWElementSetTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8402279C23CF62AC0038789A /* Resources */ = {
+		8402283023CF6F410038789A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		840227A523CF62AC0038789A /* Resources */ = {
+		8402283923CF6F420038789A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -191,33 +198,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8402279A23CF62AC0038789A /* Sources */ = {
+		8402282E23CF6F410038789A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8402284D23CF6F5C0038789A /* CRDTLWWElementSet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		840227A323CF62AC0038789A /* Sources */ = {
+		8402283723CF6F420038789A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				840227AD23CF62AC0038789A /* LLWElementSetTests.swift in Sources */,
+				8402284123CF6F420038789A /* CRDTLWWElementSetTests.swift in Sources */,
+				8402284F23CF6FBD0038789A /* CRDTLWWElementSetOperationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		840227AA23CF62AC0038789A /* PBXTargetDependency */ = {
+		8402283E23CF6F420038789A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8402279D23CF62AC0038789A /* LLWElementSet */;
-			targetProxy = 840227A923CF62AC0038789A /* PBXContainerItemProxy */;
+			target = 8402283123CF6F410038789A /* CRDTLWWElementSet */;
+			targetProxy = 8402283D23CF6F420038789A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		840227B023CF62AC0038789A /* Debug */ = {
+		8402284423CF6F420038789A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,7 +289,7 @@
 			};
 			name = Debug;
 		};
-		840227B123CF62AC0038789A /* Release */ = {
+		8402284523CF6F420038789A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -337,47 +346,50 @@
 			};
 			name = Release;
 		};
-		840227B323CF62AC0038789A /* Debug */ = {
+		8402284723CF6F420038789A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7TK32MKP4J;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = LLWElementSet/Info.plist;
+				INFOPLIST_FILE = CRDTLWWElementSet/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.azisseno.LLWElementSet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.azisseno.CRDTLWWElementSet;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		840227B423CF62AC0038789A /* Release */ = {
+		8402284823CF6F420038789A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7TK32MKP4J;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = LLWElementSet/Info.plist;
+				INFOPLIST_FILE = CRDTLWWElementSet/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.azisseno.LLWElementSet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.azisseno.CRDTLWWElementSet;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -385,36 +397,38 @@
 			};
 			name = Release;
 		};
-		840227B623CF62AC0038789A /* Debug */ = {
+		8402284A23CF6F420038789A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7TK32MKP4J;
-				INFOPLIST_FILE = LLWElementSetTests/Info.plist;
+				INFOPLIST_FILE = CRDTLWWElementSetTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.azisseno.LLWElementSetTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.azisseno.CRDTLWWElementSetTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		840227B723CF62AC0038789A /* Release */ = {
+		8402284B23CF6F420038789A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7TK32MKP4J;
-				INFOPLIST_FILE = LLWElementSetTests/Info.plist;
+				INFOPLIST_FILE = CRDTLWWElementSetTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.azisseno.LLWElementSetTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.azisseno.CRDTLWWElementSetTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -424,34 +438,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8402279823CF62AC0038789A /* Build configuration list for PBXProject "LLWElementSet" */ = {
+		8402282C23CF6F410038789A /* Build configuration list for PBXProject "CRDTLWWElementSet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				840227B023CF62AC0038789A /* Debug */,
-				840227B123CF62AC0038789A /* Release */,
+				8402284423CF6F420038789A /* Debug */,
+				8402284523CF6F420038789A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		840227B223CF62AC0038789A /* Build configuration list for PBXNativeTarget "LLWElementSet" */ = {
+		8402284623CF6F420038789A /* Build configuration list for PBXNativeTarget "CRDTLWWElementSet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				840227B323CF62AC0038789A /* Debug */,
-				840227B423CF62AC0038789A /* Release */,
+				8402284723CF6F420038789A /* Debug */,
+				8402284823CF6F420038789A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		840227B523CF62AC0038789A /* Build configuration list for PBXNativeTarget "LLWElementSetTests" */ = {
+		8402284923CF6F420038789A /* Build configuration list for PBXNativeTarget "CRDTLWWElementSetTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				840227B623CF62AC0038789A /* Debug */,
-				840227B723CF62AC0038789A /* Release */,
+				8402284A23CF6F420038789A /* Debug */,
+				8402284B23CF6F420038789A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8402279523CF62AC0038789A /* Project object */;
+	rootObject = 8402282923CF6F410038789A /* Project object */;
 }
