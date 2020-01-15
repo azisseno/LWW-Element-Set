@@ -19,7 +19,7 @@ public struct CRDTNode<T : Hashable> : Comparable {
     }
 
     public static func ==(left: CRDTNode, right: CRDTNode) -> Bool {
-        return left.value == right.value
+        return left.value == right.value && left.timestampDate == right.timestampDate
     }
 
     public static func <(left: CRDTNode, right: CRDTNode) -> Bool {
@@ -27,57 +27,79 @@ public struct CRDTNode<T : Hashable> : Comparable {
     }
 }
 
+public enum CRDTOpration {
+    case addition
+    case removal
+}
+
 public class CRDTLWWSet<T : Hashable> : Equatable {
 
-    public var sortedData: [CRDTNode<T>] {
-        return _sortedData
+    public struct Node<T: Hashable>: Equatable {
+        public var node: CRDTNode<T>
+        public var operation: CRDTOpration
     }
     
-    public var data: [T: CRDTNode<T>] {
+    public var sortedExistingData: [CRDTNode<T>] {
+        return _sortedExistingData
+    }
+    
+    public var completeData: [T: Node<T>] {
         return _data
     }
     
     public let uniqueCode = UUID().uuidString
     
-    private var _sortedData: [CRDTNode<T>] = []
-    private var _data: [T: CRDTNode<T>] = [:] {
+    private var _sortedExistingData: [CRDTNode<T>] = []
+    private var _data: [T: Node<T>] = [:] {
         didSet {
             var results = [CRDTNode<T>]()
-            results = data.map { $0.value }
-            _sortedData = results.sorted { $0 < $1 }
+            for item in _data where item.value.operation == .addition {
+                results.append(item.value.node)
+            }
+            _sortedExistingData = results.sorted { $0 < $1 }
         }
     }
 
     public func add(_ node: CRDTNode<T>) {
-        if let existingNode = data[node.value] {
-            if existingNode.timestampDate < node.timestampDate {
-                _data[node.value] = node
+        if let existingNode = _data[node.value] {
+            if existingNode.node.timestampDate < node.timestampDate {
+                _data[node.value] = Node(node: node, operation: .addition)
             }
         } else {
-            _data[node.value] = node
+            _data[node.value] = Node(node: node, operation: .addition)
         }
     }
 
     public func remove(_ node: CRDTNode<T>) {
-        if let existingNode = data[node.value] {
-            if existingNode.timestampDate < node.timestampDate {
-                _data[node.value] = nil
+        if let existingNode = _data[node.value] {
+            if existingNode.node.timestampDate < node.timestampDate {
+                _data[node.value] = Node(node: node, operation: .removal)
             }
+        } else {
+            _data[node.value] = Node(node: node, operation: .removal)
         }
     }
 
     public func merge(_ set: CRDTLWWSet<T>) {
-        for item in set.data {
-            add(item.value)
+        for item in set._data {
+            switch item.value.operation {
+            case .addition:
+                add(item.value.node)
+            case .removal:
+                remove(item.value.node)
+            }
         }
     }
 
     public func query(element: T) -> CRDTNode<T>? {
-        return data[element]
+        if let set = _data[element], set.operation == .addition {
+            return set.node
+        }
+        return nil
     }
 
     public static func ==(left: CRDTLWWSet, right: CRDTLWWSet) -> Bool {
-        guard left.data == right.data else {
+        guard left._data == right._data else {
             return false
         }
         return true
